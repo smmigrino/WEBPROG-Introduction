@@ -42,9 +42,35 @@
   </div>
   
 
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>Demo External JavaScript</h2>
 
+<p id="demo">A Paragraph.</p>
 
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="./js/myscript.js"></script>
+
+</body>
+</html>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 
 
 </body>
