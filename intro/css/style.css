@@ -1,0 +1,84 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #b2d8d8; /* soft base background */
+    color: #004c4c;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    width: 1100px;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* General item style */
+.flex-item {
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Item backgrounds */
+.item1 {
+    background-color: #008080;
+}
+.item2 {
+    background-color: #006666;
+}
+.item3 {
+    background-color: #008080;
+}
+.item4 {
+    background-color: #006666;
+}
+.item5 {
+    background-color: #004c4c;
+}
+
+/* Text styling */
+.title {
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.details {
+    display: block;
+    color: #e0f7f7;
+    font-size: 17px;
+    margin: 10px 0 5px 0;
+    padding-left: 15px;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Optional header styling */
+header h1 {
+    text-align: center;
+    color: #004c4c;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
