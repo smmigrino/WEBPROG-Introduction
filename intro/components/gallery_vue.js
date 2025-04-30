@@ -4,11 +4,11 @@ createApp({
   data() {
     return {
       photos: [
-        { src: 'assets/images/image-1.png' },
-        { src: 'assets/images/image-2.png' },
-        { src: 'assets/images/image-3.png' },
-        { src: 'assets/images/image-4.png' },
-        { src: 'assets/images/image-5.png' }
+        { src: 'assets/images/image-1.gif' },
+        { src: 'assets/images/image-2.jpg' },
+        { src: 'assets/images/image-3.jpg' },
+        { src: 'assets/images/image-4.jpg' },
+        { src: 'assets/images/image-5.jpg' }
       ]
     };
   },
