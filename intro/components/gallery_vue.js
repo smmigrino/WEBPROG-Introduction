@@ -4,11 +4,11 @@ createApp({
   data() {
     return {
       photos: [
-        { src: 'assets/images/image-1.jpg', width: 200, height: 300 },
-        { src: 'assets/images/image-2.jpg', width: 300, height: 200 },
-        { src: 'assets/images/image-3.jpg', width: 200, height: 200 },
-        { src: 'assets/images/image-4.jpg', width: 400, height: 300 },
-        { src: 'assets/images/image-5.jpg', width: 300, height: 400 },
+        { src: 'assets/images/image-1.png', width: 200, height: 300 },
+        { src: 'assets/images/image-2.png', width: 300, height: 200 },
+        { src: 'assets/images/image-3.png', width: 200, height: 200 },
+        { src: 'assets/images/image-4.png', width: 400, height: 300 },
+        { src: 'assets/images/image-5.png', width: 300, height: 400 },
       ]
     };
   },
