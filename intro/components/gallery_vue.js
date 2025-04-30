@@ -4,25 +4,33 @@ createApp({
   data() {
     return {
       photos: [
-        { src: 'assets/images/image-1.png', width: 200, height: 300 },
-        { src: 'assets/images/image-2.png', width: 300, height: 200 },
-        { src: 'assets/images/image-3.png', width: 200, height: 200 },
-        { src: 'assets/images/image-4.png', width: 400, height: 300 },
-        { src: 'assets/images/image-5.png', width: 300, height: 400 },
+        { src: 'assets/images/image-1.png' },
+        { src: 'assets/images/image-2.png' },
+        { src: 'assets/images/image-3.png' },
+        { src: 'assets/images/image-4.png' },
+        { src: 'assets/images/image-5.png' }
       ]
     };
   },
   template: `
-    <div class="collage">
-      <div v-for="(photo, index) in photos" 
-           :key="index" 
-           class="collage-item"
-           :style="{
-             width: photo.width + 'px',
-             height: photo.height + 'px'
-           }">
-        <img :src="photo.src" :alt="'Photo ' + (index + 1)" />
+    <div class="gallery-wrapper">
+      <div class="collage">
+        <div v-for="(photo, index) in photos" :key="index" class="collage-item" :style="getItemStyle(index)">
+          <img :src="photo.src" :alt="'Photo ' + (index + 1)" />
+        </div>
       </div>
     </div>
-  `
+  `,
+  methods: {
+    getItemStyle(index) {
+      const styles = [
+        { flex: '1 1 45%', height: '150px' },
+        { flex: '1 1 50%', height: '200px' },
+        { flex: '1 1 40%', height: '100px' },
+        { flex: '1 1 60%', height: '200px' },
+        { flex: '1 1 45%', height: '150px' }
+      ];
+      return styles[index] || { flex: '1 1 45%', height: '150px' };
+    }
+  }
 }).mount('#gallery-app');
