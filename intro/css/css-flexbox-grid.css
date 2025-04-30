@@ -71,6 +71,7 @@
   flex: 1 1 45%;
   overflow: hidden;
   border-radius: 10px;
+  box-sizing: border-box; /*added*/
 }
 
 .collage-item img {
@@ -83,8 +84,26 @@
 
 /* 📱 Responsive for mobile screens */
 @media (max-width: 768px) {
+.collage{
+  gap: 10px;
+}
+
   .collage-item {
     flex: 1 1 100%;
     height: auto !important; /* allow height to adjust naturally */
+  }
+}
+
+/* Grid container responsiveness (added) */
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item1, .item2, .item3, .item4, .item5 {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
