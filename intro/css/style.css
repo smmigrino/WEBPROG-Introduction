@@ -86,3 +86,69 @@ header h1 {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+
+.guestbook-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #007c7c;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .guestbook-form h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #007c7c;
+    text-align: center;
+  }
+  
+  .guestbook-form label {
+    font-weight: 600;
+    color: #007c7c;
+  }
+  
+  .guestbook-form input,
+  .guestbook-form textarea {
+    padding: 10px;
+    border: 1px solid #00b3b3;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #005757;
+  }
+  
+  .guestbook-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .guestbook-form button {
+    background-color: #00b3b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .guestbook-form button:hover {
+    background-color: #008c8c;
+  }
+  
+  .thank-you {
+    text-align: center;
+    color: #007c7c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
