@@ -13,7 +13,7 @@
     minmax(150px, auto)
     minmax(150px, auto);
 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 10px;
 
 
