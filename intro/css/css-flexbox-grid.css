@@ -109,7 +109,7 @@
     gap: 20px;
   }
 
-  .item1, .item2, .item3, .item4, .item5 {
+  .item1, .item2, .item3, .item4, .item5, .item6 {
     grid-column: auto;
     grid-row: auto;
   }
