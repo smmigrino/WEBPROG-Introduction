@@ -26,8 +26,8 @@ createApp({
       const styles = [
         { flex: '1 1 45%', height: '200px' },
         { flex: '1 1 50%', height: '200px' },
-        { flex: '1 1 40%', height: '400px' },
-        { flex: '1 1 20%', height: '200px' },
+        { flex: '1 1 40%', height: '250px' },
+        { flex: '1 1 70%', height: '300px' },
         { flex: '1 1 45%', height: '250px' }
       ];
       return styles[index] || { flex: '1 1 45%', height: '150px' };
