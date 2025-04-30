@@ -24,13 +24,18 @@ createApp({
   methods: {
     getItemStyle(index) {
       const styles = [
-        { flex: '1 1 45%', height: '150px' },
-        { flex: '1 1 30%', height: '150px' },
-        { flex: '1 1 40%', height: '150px' },
-        { flex: '1 1 30%', height: '150px' },
-        { flex: '1 1 30%', height: '185px' }
+    { flex: '1 1 45%', height: '150px' },
+    { flex: '1 1 30%', height: '150px' },
+    { flex: '1 1 40%', height: '150px' },
+    { flex: '1 1 30%', height: '150px' },
+    { flex: '1 1 30%', height: '185px' }
       ];
-      return styles[index] || { flex: '1 1 45%', height: '150px' };
+
+      const baseStyle = styles[index] || { flex: '1 1 45%', height: '150px' };
+      
+      return {
+        ...baseStyle
+      };
     }
   }
 }).mount('#gallery-app');
