@@ -54,10 +54,12 @@ body {
 .title {
     color: #f0f0f0;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 300;
     display: inline-block;
     margin-top: 10px;
 }
+
+
 
 .name {
     color: #ffffff;
@@ -73,6 +75,7 @@ body {
     margin: 10px 0 5px 0;
     padding-left: 15px;
     border-left: 3px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
 }
 
 /* Optional header styling */
