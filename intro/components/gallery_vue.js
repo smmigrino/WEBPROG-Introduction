@@ -24,11 +24,11 @@ createApp({
   methods: {
     getItemStyle(index) {
       const styles = [
-        { flex: '1 1 45%', height: '180px' },
-        { flex: '1 1 30%', height: '110px' },
+        { flex: '1 1 45%', height: '150px' },
+        { flex: '1 1 30%', height: '150px' },
         { flex: '1 1 40%', height: '150px' },
         { flex: '1 1 30%', height: '150px' },
-        { flex: '1 1 45%', height: '200px' }
+        { flex: '1 1 30%', height: '185px' }
       ];
       return styles[index] || { flex: '1 1 45%', height: '150px' };
     }
