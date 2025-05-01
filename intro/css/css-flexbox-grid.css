@@ -1,10 +1,12 @@
+/* ======== GRID CONTAINER STYLES ======== */
 .grid-container {
   display: grid;
   width: 90%;
   max-width: 1100px;
-  margin: 40px auto; /* centers it horizontally and adds top spacing */
+  margin: 40px auto; /* Center horizontally and add spacing at the top */
   padding: 20px;
 
+  /* Define row heights using minmax to allow flexibility */
   grid-template-rows:
     minmax(80px, auto)
     minmax(100px, auto)
@@ -14,101 +16,100 @@
     minmax(150px, auto)
     minmax(200px, auto);
 
+  /* 2-column layout: first column is wider */
   grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  gap: 10px; /* Space between grid items */
 
-
-  background-color: #f8f8f8; /* optional: gives background to see corners */
-  border-radius: 20px; /* round those corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: adds a soft shadow */
-
+  background-color: #f8f8f8; /* Light background for visibility */
+  border-radius: 20px; /* Smooth, rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
+/* ======== GRID ITEM POSITIONING ======== */
 .item1 {
-  grid-row: 1/ 2;
-  grid-column: 1 /3;
-
+  grid-row: 1 / 2;
+  grid-column: 1 / 3; /* Spans across both columns */
 }
 
 .item2 {
-  grid-row: 2/ 5;
-  grid-column: 1 / 2;
-
+  grid-row: 2 / 5;
+  grid-column: 1 / 2; /* Left column */
 }
 
 .item3 {
-  grid-row: 5/ 6;
-  grid-column: 1 / 2;
-
+  grid-row: 5 / 6;
+  grid-column: 1 / 2; /* Left column */
 }
 
-
 .item4 {
-  grid-row: 2/ 6;
-  grid-column: 2 / 3;
-
+  grid-row: 2 / 6;
+  grid-column: 2 / 3; /* Right column */
 }
 
 .item5 {
-  grid-row: 6/ 7;
-  grid-column: 1 / 3;
-
+  grid-row: 6 / 7;
+  grid-column: 1 / 3; /* Full width */
 }
 
 .item6 {
   grid-row: 7 / 8;
-  grid-column: 1 / 3;
+  grid-column: 1 / 3; /* Full width */
 }
 
-
+/* ======== GALLERY STYLES ======== */
 .gallery-wrapper {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
 
+/* Container for flex-based image collage */
 .collage {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px; /* Gap between images */
   justify-content: space-between;
 }
 
+/* Each photo in the collage */
 .collage-item {
-  flex: 1 1 45%;
+  flex: 1 1 45%; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 45% */
   overflow: hidden;
   border-radius: 10px;
-  box-sizing: border-box; /*added*/
+  box-sizing: border-box; /* Ensures padding/border don’t exceed box size */
 }
 
+/* Make images fill their container and look good */
 .collage-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Maintain aspect ratio and cover the box */
   display: block;
   border-radius: 10px;
 }
 
-/* 📱 Responsive for mobile screens */
+/* ======== RESPONSIVE STYLES FOR MOBILE ======== */
 @media (max-width: 768px) {
-.collage{
-  gap: 10px;
-}
+  /* Adjust collage layout for small screens */
+  .collage {
+    gap: 10px;
+  }
 
   .collage-item {
-    flex: 1 1 100%;
-    height: auto !important; /* allow height to adjust naturally */
+    flex: 1 1 100%; /* Stack images vertically */
+    height: auto !important; /* Let height adjust naturally */
   }
 }
 
-/* Grid container responsiveness (added) */
 @media (max-width: 768px) {
+  /* Switch grid layout to flex column on smaller screens */
   .grid-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
+  /* Reset grid-specific positioning for items */
   .item1, .item2, .item3, .item4, .item5 {
     grid-column: auto;
     grid-row: auto;

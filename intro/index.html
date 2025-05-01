@@ -5,80 +5,87 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Info</title>
+
+	<!-- Link to custom CSS for page styling -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Link to flexbox grid system for layout -->
 	<link rel="stylesheet" href="css/css-flexbox-grid.css">
-	
-	
 </head>
 
-
-<body>     
+<body>
+	<!-- Page header with title -->
 	<header>
 		<h1>Basic Info Page</h1>
 	</header>
-	<div class="grid-container">
-		<div class="flex-item item1">
-			<!-- Item 1 -->
-			<br><span class="fname">Fullname:</span> <span class="name">Sharmaine Migriño</span>
 
+	<!-- Main container using a flexbox grid layout -->
+	<div class="grid-container">
+		
+		<!-- Personal Full Name -->
+		<div class="flex-item item1">
+			<!-- Item 1: Full Name -->
+			<br><span class="fname">Fullname:</span> 
+			<span class="name">Sharmaine Migriño</span>
 		</div> 
 
+		<!-- Education and IT Background -->
 		<div class="flex-item item2">
-			<!-- Item 2 -->
+			<!-- Item 2: Education and IT Experience -->
 			<span class="title">Education:</span> 
 			<br>
 			<span class="details education">BS Psychology (2015) - Xavier University--Ateneo de Cagayan</span>
 
-
 			<br><span class="title">Course:</span> 
 			<br>
 			<span class="details course">Associate in Computer Technology (2024)</span>
-
 
 			<br><span class="title">IT Experience:</span> 
 			<br>
 			<span class="details it_experience">Mobile Programming using Flutter</span>
 			<br>
 			<span class="details it_experience">Introductions to Java and Python</span>
-
 		</div>
 		
-		
+		<!-- Hobbies and Interests -->
 		<div class="flex-item item3">
-			<!-- Item 3 -->
+			<!-- Item 3: Hobbies -->
 			<span class="title">Hobbies and Interest:</span> 
 			<br>
 			<span class="details hobbies">Music, Art, Motion Picture, Animation</span>
 			<br>
-
-
 		</div>
+
+		<!-- Vue App for Favorites Gallery -->
 		<div class="flex-item item4">
-			<!--Item 4-->
+			<!-- Item 4: Favorite's Gallery -->
 			<span class="title">Favorite's Gallery:</span> 
-				<div id="gallery-app"></div> <!-- Vue app mounts here -->				
+			<div id="gallery-app"></div> <!-- Vue app mounts here -->
 		</div>
 
+		<!-- Life Goal -->
 		<div class="flex-item item5">
-			<!-- Item 5 -->
+			<!-- Item 5: Life Goal -->
 			<span class="title">Goal in life:</span>
-			<span class="details hobbies">Use technology to create impactful change in the country's healthcare system.</span>
+			<span class="details hobbies">
+				Use technology to create impactful change in the country's healthcare system.
+			</span>
 			<br>
-		
 		</div>
 
+		<!-- Vue App for Guestbook Form -->
 		<div class="flex-item item6">
-			<!-- Guestbook Form -->
-			<div id="guestbook-app"></div>
-		  </div>
-
-
+			<!-- Item 6: Guestbook Form -->
+			<div id="guestbook-app"></div> <!-- Vue app mounts here -->
+		</div>
 	</div>
 
+<!-- Vue.js Library -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="components/gallery_vue.js"></script>
-<script src="components/form-guestbook_vue.js"></script>
+
+<!-- Vue Component Scripts -->
+<script src="components/gallery_vue.js"></script> <!-- Handles favorite's gallery -->
+<script src="components/form-guestbook_vue.js"></script> <!-- Handles guestbook form -->
 
 </body>
-
 </html>
